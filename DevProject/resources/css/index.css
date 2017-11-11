@@ -1,0 +1,46 @@
+h1 {
+  color: darkolivegreen;
+  font-size: 2em;
+  text-align: center;
+  background-color: black;
+}
+
+.under {
+  font-family: Copperplate;
+  color: darkolivegreen;
+  font-size: 20px;
+}
+
+.target {
+  font-size: 25px;
+  color: darkolivegreen;
+  font-family: Copperplate;
+}
+
+.li_elem {
+  font-size: 20px;
+  color: darkolivegreen;
+  font-family: Copperplate;
+  list-style: square;
+}
+
+.color_link a {
+  color: darkolivegreen;
+}
+
+img {
+  height: 150px;
+}
+
+.under2 {
+  text-align: center;
+  background-color: paleturquoise;
+  font-size: 16px;
+}
+
+.me {
+  color: darkolivegreen;
+  font-family: Copperplate;
+  font-weight: bold;
+
+}
