@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <!-- Meta -->
     <meta charset="utf-8">
     <title>My portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./res/img/logo/favicon.ico" type="image/x-icon">
+
+    <!--Style -->
     <link href="./res/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./res/css/style.css" type="text/css" rel="stylesheet">
+
+    <!-- Font Awsome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet"> <!-- For header -->
+    <link href="https://fonts.googleapis.com/css?family=Share:400,700" rel="stylesheet"> <!-- For buttons -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> <!-- main text -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> <!-- main text -->
   </head>
   <body>
 
-    <header>
+    <!-- Header -->
+    <header id="top-header">
         <div class="main-menu">
           <div class="logo">
-            <h1>ARTYOM FEDOTKIN &nbsp; <span> WEB DEVELOPER</span></h1>
-          </div><!--end .logo -->
-          <div class="menu">
-            <ul role="presentation">
-              <li><a href="#">My skill</a></li>
-              <li><a href="#">Ended courses</a></li>
-              <li><a href="#">My projects</a></li>
+            <div class="main-logo">
+              <a href="index.html"><img src="./res/img/logo/database-labs.svg" alt="main site logo"></a>
+            </div>
+            <ul>
+              <li>ARTYOM FEDOTKIN</li>
+              <li>WEB DEVELOPER</li>
             </ul>
-          </div><!--end .menu -->
+          </div><!--end .logo -->
+          <nav class="menu">
+            <ul>
+              <li><a href="#">My projects</a></li>
+              <li><a href="#">About me</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </nav><!--end .menu -->
         </div> <!--end .main-menu -->
       </header>
 
+      <!-- Main content -->
       <main>
-        <section>
-
+        <section id="mySpecimens">
+          <h2>My specimens</h2>
         </section>
 
-        
+        <section id="whatIcan">
+          <h2>What I can</h2>
+        </section>
+
+        <section id="mySkills">
+          <h2>My skills</h2>
+        </section>
+
+        <section id="coursesAndcertificates">
+          <h2>Finished courses and certificates</h2>
+        </section>
+
       </main>
 
-
+      <!-- Footer -->
+      <footer id="bottom-footer">
+        <ul>
+          <li>&copy; Design, code and ideas by Artyom Fedotkin</li>
+          <li><i class="fas fa-phone"></i>&ensp; +7 (929) 977-74-77</li>
+          <li><i class="fas fa-envelope"></i> &ensp; as.fedotkin@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i>&ensp; Russia, Moscow</li>
+        </ul>
+      </footer>
 
   </body>
 </html>
