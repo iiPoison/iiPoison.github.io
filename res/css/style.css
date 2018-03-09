@@ -99,24 +99,82 @@ body {
   font-size: 1.1rem;
 }
 
+/* main */
 main {
   margin-top: 1rem;
-  font-family: 'Roboto', sans-serif;
+  max-width: 75rem;
+  width: 100%;
 }
 
-/* My Specimens */
 #mySpecimens, #whatIcan, #mySkills, #coursesAndcertificates {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 1rem 0;
+  width: 100%;
 }
 
 #mySpecimens h2, #whatIcan h2, #mySkills h2, #coursesAndcertificates h2 {
   font-size: 3rem;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2rem;
 }
 
+/* My Specimens */
+
 /* What I can */
+.double-block {
+  width: 100%;
+  display: flex;
+}
+
+.half-block {
+  width: 37.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wheel {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  background-color: #363636;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.aside-wheel {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  width: 27.5rem;
+}
+.aside-wheel p {
+  padding: 0.5rem;
+  color: #363636;
+}
+
+.font-size-2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.border-left {
+  border-left: 4px solid #363636;
+}
+
+.border-bottom {
+  border-bottom: 4px solid #363636;
+}
+
 
 /* My Scills */
 
@@ -133,6 +191,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.1rem;
 }
 
 #bottom-footer ul {
