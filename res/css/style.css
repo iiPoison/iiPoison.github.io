@@ -10,6 +10,31 @@ body {
   background-color: #b8b8b8;
 }
 
+.font-size-2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.width-23 {
+  width: 22%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
 /* Header*/
 #top-header {
   margin-top: 1rem;
@@ -20,7 +45,6 @@ body {
   height: 5rem;
   justify-content: center;
   border-bottom: 2px solid brown;
-  background-color: white;
   background-color: #b8b8b8;
 }
 
@@ -29,13 +53,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 1.5rem;
-
 }
 
 .main-menu .logo {
   display: flex;
   flex-direction: row;
-
 }
 
 .main-menu .logo .main-logo {
@@ -124,11 +146,105 @@ main {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 2rem;
-  color: #141414; /* удалить, перекрывает другие цвета */
   margin-top: 1rem;
 }
 
 /* My Specimens */
+#mySpecimens {
+  background-color: #18001A;
+  box-shadow: 0 0 20px rgb(0,0,0);
+  border-radius: 10px;
+  width: 100%;
+}
+
+#mySpecimens h2 {
+  color: #BF6EE0;
+}
+
+#mySpecimens .main-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #2B003D;
+}
+
+#mySpecimens .main-section .block-quote {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#mySpecimens .main-section .block-quote .quote {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mySpecimens .main-section .block-quote .quote ul {
+  text-transform: uppercase;
+  color: #BF6EE0;
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+  padding: 1.7rem;
+  border: 1px solid #BF6EE0;
+  box-shadow: 0 0 25px rgb(0,0,0);
+}
+
+#mySpecimens .main-section .block-quote .quote ul li:first-child {
+  font-size: 4.9rem;
+}
+
+#mySpecimens .main-section .block-quote .quote ul li:last-child {
+  font-size: 1.9rem;
+}
+
+#mySpecimens .main-section .block-quote .aside-qoute {
+  width: 40%;
+}
+
+#mySpecimens .main-section .block-quote-bottom-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.item-conteiner {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #7F01B6; 
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgb(0,0,0);
+}
+
+.item-conteiner .image {
+  height: auto;
+  margin: 0.5rem;
+}
+
+.item-conteiner .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.item-conteiner .discription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.item-conteiner .discription h3 {
+  font-size: 2rem;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  color: #BF6EE0;
+  text-align: center;
+  margin: 0.5rem 0;
+}
 
 /* What I can */
 #whatIcan {
@@ -175,11 +291,6 @@ main {
 #whatIcan .aside-wheel p {
   padding: 0.5rem;
   color: #6bb9f0;
-}
-
-.font-size-2 {
-  text-align: center;
-  font-size: 2.5rem;
 }
 
 /* My Scills */
