@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  background-color: #b8b8b8;
 }
 
 /* Header*/
@@ -20,6 +21,7 @@ body {
   justify-content: center;
   border-bottom: 2px solid brown;
   background-color: white;
+  background-color: #b8b8b8;
 }
 
 .main-menu {
@@ -27,11 +29,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 1.5rem;
+
 }
 
 .main-menu .logo {
   display: flex;
   flex-direction: row;
+
 }
 
 .main-menu .logo .main-logo {
@@ -116,65 +120,67 @@ main {
 }
 
 #mySpecimens h2, #whatIcan h2, #mySkills h2, #coursesAndcertificates h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 2rem;
+  color: #141414; /* удалить, перекрывает другие цвета */
+  margin-top: 1rem;
 }
 
 /* My Specimens */
 
 /* What I can */
-.double-block {
-  width: 100%;
-  display: flex;
+#whatIcan {
+  background-color: #082A5C;
+  box-shadow: 0 0 20px rgb(0,0,0);
+  border-radius: 10px;
 }
 
-.half-block {
+#whatIcan h2 {
+  color: #6bb9f0;
+}
+
+#whatIcan .double-block {
+  width: 100%;
+  display: flex;
+  background-color: #265191;
+}
+
+#whatIcan .half-block {
   width: 37.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.wheel {
+#whatIcan .wheel {
+  background-color: #141414;
   width: 10rem;
   height: 10rem;
   border-radius: 5rem;
-  background-color: #363636;
-  color: white;
-
+  color: #6bb9f0;
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 5rem;
   margin: 1rem;
+  box-shadow: 0 0 20px rgb(0,0,0);
 }
-
-.aside-wheel {
-  font-family: 'Open Sans', sans-serif;
+#whatIcan .aside-wheel {
+  font-family: 'Barlow', sans-serif;
   font-size: 2rem;
   width: 27.5rem;
 }
-.aside-wheel p {
+#whatIcan .aside-wheel p {
   padding: 0.5rem;
-  color: #363636;
+  color: #6bb9f0;
 }
 
 .font-size-2 {
   text-align: center;
   font-size: 2.5rem;
 }
-
-.border-left {
-  border-left: 4px solid #363636;
-}
-
-.border-bottom {
-  border-bottom: 4px solid #363636;
-}
-
 
 /* My Scills */
 
@@ -192,6 +198,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
+  box-shadow: 0 0 20px rgb(0,0,0);
 }
 
 #bottom-footer ul {
