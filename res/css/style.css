@@ -158,14 +158,14 @@ main {
 
 #mySpecimens h2 {
   color: #BF6EE0;
+
 }
 
 #mySpecimens .main-section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #2B003D;
-
+  background-color: #290424;
 }
 
 #mySpecimens .main-section .block-quote {
