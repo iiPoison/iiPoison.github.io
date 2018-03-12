@@ -7,9 +7,8 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background-color: #b8b8b8;
+  background-color: #d1d1d1;
 }
-
 .font-size-2 {
   text-align: center;
   font-size: 2.5rem;
@@ -45,14 +44,14 @@ body {
   height: 5rem;
   justify-content: center;
   border-bottom: 2px solid brown;
-  background-color: #b8b8b8;
+  background-color: #d1d1d1;
+
 }
 
 .main-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 1.5rem;
 }
 
 .main-menu .logo {
@@ -86,7 +85,7 @@ body {
 
 .main-menu .logo ul li:last-child {
   color: brown;
-  font-size: 2.3rem;
+  font-size: 2.85rem;
 }
 
 .main-menu .logo img {
@@ -166,6 +165,7 @@ main {
   flex-direction: column;
   width: 100%;
   background-color: #2B003D;
+
 }
 
 #mySpecimens .main-section .block-quote {
@@ -214,7 +214,7 @@ main {
   margin: 0.5rem;
   display: flex;
   align-items: center;
-  border: 1px solid #7F01B6; 
+  border: 1px solid #7F01B6;
   border-radius: 5px;
   box-shadow: 0 0 25px rgb(0,0,0);
 }
