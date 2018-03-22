@@ -116,7 +116,6 @@ body {
 .main-menu .menu ul li:active {
   background-color: brown;
 }
-
 .main-menu .menu ul li a{
   color: white;
   text-decoration: none;
