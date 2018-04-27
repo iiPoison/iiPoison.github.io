@@ -1,5 +1,8 @@
+/* variables */
 
-/*global*/
+/* mixins */
+
+/* global*/
 html {
   font-size: 16px;
   body {
@@ -9,6 +12,7 @@ html {
       margin: 0;
       padding: 0;
       position: fixed;
+      z-index: 10;
       height: 4rem;
       width: 100%;
       display: flex;
@@ -79,28 +83,60 @@ html {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 45rem;
-      display: flex;
-      justify-content: center;
+      height: 35rem;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 100%;
+      border-bottom: 1px solid grey; 
+      .color-filter {
+        grid-area: 1 / 1 / 2 / 2;
+        z-index: 2;
+        background-color: white;
+        opacity: 0.6;
+      }
+      .content {
+        grid-area: 1 / 1 / 2 / 2;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .devider {
+          width: 75rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .credo {
+            font-family: 'Exo', sans-serif;
+            border: 2px solid black;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 2rem;
+            border-radius: 5px;
+            h2 {
+              font-size: 4.9rem;
+              color: black;
+              display: inline-block;
+            }
+            h3 {
+              font-size: 1.9rem;
+              color: black;
+              display: inline-block;
+              font-weight: bold;
+            }
+          } /* end .credo */
+        } /* end .devider */
+      } /* end .content */
+    } /* end #greeting */
+    #aboutMe {
       .devider {
         width: 75rem;
-        margin-top: 10rem;
-        margin-left: 3rem;
-        .credo {
-          font-family: 'Exo', sans-serif;
-          background-color: black;
-          h2 {
-            font-size: 4.9rem;
-            color: white;
-            display: inline-block;
-          }
-          h3 {
-            font-size: 1.9rem;
-            color: white;
-            display: inline-block;
-          }
-        }
-      }
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      } /* end .devider */
+    } /* end #aboutMe */
   } /* end body */
 } /* end html */
