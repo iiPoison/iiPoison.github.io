@@ -61,7 +61,11 @@ html {
         }
         #main-nav {
           font-family: 'Share', cursive;
-          ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-end;
+          .primaryMenu {          
             li{
               display: inline-block;
               font-size: 1.2rem;
@@ -76,7 +80,20 @@ html {
                 }
               }
             }
-          }
+          } /* end .primaryMenu */
+          .mobileMenu {
+            display: none;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+            visibility: hidden;
+            li{
+              display: inline-block;
+              margin: 0 1.25rem;
+              a {
+
+              }
+            }
+          } /* end mobileMenu */
         } /* end #main-nav  */
       } /* end devider */
     } /* end #header */
@@ -319,3 +336,5 @@ html {
     } /* end footer */
   } /* end body */
 } /* end html */
+
+@include MediaQueries;

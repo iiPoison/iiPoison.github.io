@@ -1,3 +1,4 @@
+/* mediaQueries */
 html {
   font-size: 16px;
   /* end body */ }
@@ -58,18 +59,32 @@ html {
                 font-size: 1.5rem;
                 letter-spacing: 3px; }
         html body #header .devider #main-nav {
-          font-family: 'Share', cursive; }
-          html body #header .devider #main-nav ul li {
+          font-family: 'Share', cursive;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-end;
+          /* end .primaryMenu */
+          /* end mobileMenu */ }
+          html body #header .devider #main-nav .primaryMenu li {
             display: inline-block;
             font-size: 1.2rem;
             margin: 0 1.25rem; }
-            html body #header .devider #main-nav ul li a {
+            html body #header .devider #main-nav .primaryMenu li a {
               padding-bottom: 1rem;
               border-bottom: 3px solid white;
               text-decoration: none;
               color: #000000; }
-              html body #header .devider #main-nav ul li a:hover {
+              html body #header .devider #main-nav .primaryMenu li a:hover {
                 border-bottom: 3px solid deepskyblue; }
+          html body #header .devider #main-nav .mobileMenu {
+            display: none;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+            visibility: hidden; }
+            html body #header .devider #main-nav .mobileMenu li {
+              display: inline-block;
+              margin: 0 1.25rem; }
     html body #greeting {
       margin-top: 4rem;
       background-image: url("../img/background/sketched-low.jpg");
@@ -610,5 +625,11 @@ html {
           color: #848488; }
 
 /* end html */
+@media only screen and (max-width: 768px) {
+  #header #main-nav .primaryMenu {
+    display: none; }
+  #header #main-nav .mobileMenu {
+    display: flex;
+    visibility: visible; } }
 
 /*# sourceMappingURL=style.css.map */

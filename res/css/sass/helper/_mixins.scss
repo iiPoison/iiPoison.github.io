@@ -74,3 +74,33 @@
     @include transition(background-color);
   }
 }
+
+/* mediaQueries */
+
+@mixin MediaQueries() {
+  @media only screen and (max-width: 1024px) {
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    #header {
+      .main-logo {
+
+      }
+      #main-nav {
+        .primaryMenu {
+          display: none;
+        }
+
+        .mobileMenu {
+          display: flex;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+
+  }
+}
