@@ -27,16 +27,22 @@ html {
         a {
           text-decoration: none;
           color: black;
+          width: 18rem;
           .main-logo {
             display: flex;
             flex-direction: row;
-            .logo {
+            .logo { 
               width: 11%;
               height: auto;
               margin-right: 0.5rem;
               img {
                 width: 100%;
                 height: 100%;
+              }
+            }
+            @media only screen and (max-width: 480px) {
+              .logo {
+                display: none;
               }
             }
             .myName {
@@ -57,15 +63,20 @@ html {
                 letter-spacing: 3px;
               }
             }
+            @media only screen and (max-width: 480px) {
+              .myName {
+                margin-left: 1rem;
+              }
+            }
           }
         }
-        #main-nav {
+        #primaryMenu {
           font-family: 'Share', cursive;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
           justify-content: flex-end;
-          .primaryMenu {          
+          ul {
             li{
               display: inline-block;
               font-size: 1.2rem;
@@ -81,20 +92,28 @@ html {
               }
             }
           } /* end .primaryMenu */
-          .mobileMenu {
-            display: none;
-            justify-content: center;
-            margin-bottom: 0.75rem;
-            visibility: hidden;
+        } /* end #primaryMenu */
+        #mobileMenu {
+          display: none;
+          justify-content: center;
+          margin-bottom: 0.75rem;
+          ul {
             li{
               display: inline-block;
-              margin: 0 1.25rem;
+              margin: 0 1.5rem;
               a {
-
               }
             }
-          } /* end mobileMenu */
-        } /* end #main-nav  */
+          }
+        } /* end mobileMenu */
+        @media only screen and (max-width: 768px) {
+          #primaryMenu {
+            display: none;
+          }
+          #mobileMenu {
+            display: flex;
+          }
+        }
       } /* end devider */
     } /* end #header */
     #greeting {
@@ -336,5 +355,3 @@ html {
     } /* end footer */
   } /* end body */
 } /* end html */
-
-@include MediaQueries;
