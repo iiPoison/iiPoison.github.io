@@ -24,25 +24,22 @@ html {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        a {
+        #logoAnchor {
           text-decoration: none;
           color: black;
           width: 18rem;
           .main-logo {
             display: flex;
             flex-direction: row;
-            .logo { 
-              width: 11%;
+            width: auto;
+            .logo {
+              width: 13%;
               height: auto;
               margin-right: 0.5rem;
+              margin-left: 0.5rem;
               img {
                 width: 100%;
                 height: 100%;
-              }
-            }
-            @media only screen and (max-width: 480px) {
-              .logo {
-                display: none;
               }
             }
             .myName {
@@ -63,13 +60,37 @@ html {
                 letter-spacing: 3px;
               }
             }
-            @media only screen and (max-width: 480px) {
-              .myName {
+            @media only screen and (max-width: 650px) {
+              .logo {
                 margin-left: 1rem;
+                width: 18%;
+              }
+              .myName {
+                display: none;
               }
             }
           }
+        } /* end a */
+        #imgAnchor {
+          display: none;
         }
+        @media only screen and (max-width: 650px) {
+          #logoAnchor {
+            display: none;
+          }
+
+          #imgAnchor {
+            display: inline-block;
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-left: 1rem;
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+
         #primaryMenu {
           font-family: 'Share', cursive;
           display: flex;
@@ -102,6 +123,8 @@ html {
               display: inline-block;
               margin: 0 1.5rem;
               a {
+                text-decoration: none;
+                color: black;
               }
             }
           }
@@ -116,6 +139,7 @@ html {
         }
       } /* end devider */
     } /* end #header */
+
     #greeting {
       margin-top: 4rem;
       background-image: url("../img/background/sketched-low.jpg");
@@ -168,11 +192,28 @@ html {
               font-weight: bold;
               letter-spacing: 2px;
             }
+            @media only screen and (max-width: 768px) {
+              h2 {
+                font-size: 3.5rem;
+              }
+              h3 {
+                font-size: 1.18rem;
+              }
+            }
+            @media only screen and (max-width: 540px) {
+              h2 {
+                font-size: 3rem;
+              }
+              h3 {
+                font-size: 0.9rem;
+              }
+            }
           } /* end .credo */
 
         } /* end .devider */
       } /* end .content */
     } /* end #greeting */
+
     #aboutMe {
       display: flex;
       justify-content: center;
@@ -183,7 +224,6 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-
         p {
           #avatar {
             width: 7rem;
@@ -200,8 +240,15 @@ html {
           line-height: 1.3;
           font-size: 1.3rem;
         }
+        @media only screen and (max-width: 768px) {
+          p {
+            line-height: 1.2;
+            font-size: 1.1rem;
+          }
+        }
       } /* end .devider */
     } /* end #aboutMe */
+
     #services {
       display: flex;
       justify-content: center;
@@ -239,6 +286,21 @@ html {
               @include skill-description;
             }
           } /* end #responsiveWebPage */
+          @media only screen and (max-width: 768px) {
+            #responsiveWebPage {
+              width: 60%;
+              margin-bottom: 2.5rem;
+              .skill-icon {
+                font-size: 3.5rem;
+              }
+              .skill-header {
+                font-size: 1.3rem;
+              }
+              .skill-description {
+                font-size: 1rem;
+              }
+            }
+          }
           #uxUiDesign {
             width: 30%;
             .skill-icon {
@@ -251,6 +313,21 @@ html {
               @include skill-description;
             }
           } /*end #uxUiDesign */
+          @media only screen and (max-width: 768px) {
+            #uxUiDesign {
+              width: 60%;
+              margin-bottom: 2.5rem;
+              .skill-icon {
+                font-size: 3.5rem;
+              }
+              .skill-header {
+                font-size: 1.3rem;
+              }
+              .skill-description {
+                font-size: 1rem;
+              }
+            }
+          }
           #codeSkill {
             width: 30%;
             .skill-icon {
@@ -263,9 +340,31 @@ html {
               @include skill-description;
             }
           }
+          @media only screen and (max-width: 768px) {
+            #codeSkill {
+              width: 60%;
+              .skill-icon {
+                font-size: 3.5rem;
+              }
+              .skill-header {
+                font-size: 1.3rem;
+              }
+              .skill-description {
+                font-size: 1rem;
+              }
+            }
+          }
         } /* end .scope */
+        @media only screen and (max-width: 730px) {
+          .scope {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       } /* end .devider */
     } /* end #whatICan */
+
     #project {
       display: flex;
       justify-content: center;
@@ -296,6 +395,7 @@ html {
             flex-direction: row;
             width: 100%;
             margin-bottom: 1rem;
+
             #projectOne {
               @include project('../img/project/1.jpg');
             }
@@ -305,27 +405,104 @@ html {
             #projectTree {
               @include project('../img/project/3.jpg');
             }
-          }
-            .tripleContainer{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: row;
-              width: 100%;
-              margin-bottom: 3rem;
-              #projectFour {
-                @include project('../img/project/4.jpg');
+            @media only screen and (max-width: 1024px) {
+              #projectOne {
+                width: calc(20.625rem*1.9);
+                height: calc(13.75rem*1.9);
+                margin: 1.5rem 0;
               }
-              #projectFive {
-                @include project('../img/project/5.jpg');
+              #projectTwo {
+                width: calc(20.625rem*1.9);
+                height: calc(13.75rem*1.9);
+                margin: 1.5rem 0;
+              }
+              #projectTree {
+                width: calc(20.625rem*1.9);
+                height: calc(13.75rem*1.9);
+              }
+            }
+            @media only screen and (max-width: 650px) {
+              #projectOne {
+                width: calc(20.625rem*1.3);
+                height: calc(13.75rem*1.3);
+                margin: 1.5rem 0;
+              }
+              #projectTwo {
+                width: calc(20.625rem*1.3);
+                height: calc(13.75rem*1.3);
+                margin: 1.5rem 0;
+              }
+              #projectTree {
+                width: calc(20.625rem*1.3);
+                height: calc(13.75rem*1.3);
+              }
+            }
+          } /* end .tripleContainer */
+          @media only screen and (max-width: 1024px) {
+            .tripleContainer {
+              flex-direction: column;
+            }
+          }
+          .tripleContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 3rem;
+            #projectFour {
+              @include project('../img/project/4.jpg');
+            }
+            #projectFive {
+              @include project('../img/project/5.jpg');
+            }
+            #projectSix {
+              @include project('../img/project/6.jpg');
+            }
+            @media only screen and (max-width: 1024px) {
+              #projectFour {
+                width: calc(20.625rem*1.9);
+                height: calc(13.75rem*1.9);
+                margin: 1.5rem 0;
+              }
+              #projectFive  {
+                width: calc(20.625rem*1.9);
+                height: calc(13.75rem*1.9);
+                margin: 1.5rem 0;
               }
               #projectSix {
-                @include project('../img/project/6.jpg');
+                width: calc(20.625rem*1.9);
+                height: calc(13.75rem*1.9);
+                margin: 1.5rem 0;
               }
+            }
+            @media only screen and (max-width: 650px) {
+              #projectFour {
+                width: calc(20.625rem*1.3);
+                height: calc(13.75rem*1.3);
+                margin: 1.5rem 0;
+              }
+              #projectFive  {
+                width: calc(20.625rem*1.3);
+                height: calc(13.75rem*1.3);
+                margin: 1.5rem 0;
+              }
+              #projectSix {
+                width: calc(20.625rem*1.3);
+                height: calc(13.75rem*1.3);
+                margin: 1.5rem 0;
+              }
+            }
           } /* end .tripleContainer */
+          @media only screen and (max-width: 1024px) {
+            .tripleContainer {
+              flex-direction: column;
+            }
+          }
         } /* end .projectBox */
       } /* end .devider */
     } /* end #project */
+
     #contactMe {
       height: 20rem;
       background-color: #434345;
@@ -341,6 +518,13 @@ html {
             font-size: 1.2rem;
             color: #848488;
           }
+          @media only screen and (max-width: 768px) {
+            li {
+              display: block;
+              text-align: center;
+              margin: 0.5rem 0;
+            }
+          }
         }
       }
       .copyright {
@@ -353,5 +537,10 @@ html {
         }
       }
     } /* end footer */
+    @media only screen and (max-width: 768px) {
+      #contactMe {
+        height: 15rem;
+      }
+    }
   } /* end body */
 } /* end html */
