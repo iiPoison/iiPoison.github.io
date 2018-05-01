@@ -31,21 +31,23 @@
     <!-- Header + nav -->
     <header id=header>
       <div class="devider">
-        <div class="main-logo">
-          <div class="logo">
-            <img src="./res/img/logo/logo.svg">
+        <a href="index.html">
+          <div class="main-logo">
+            <div class="logo">
+              <img src="./res/img/logo/logo.svg">
+            </div>
+            <div class="myName">
+              <h2>ARTYOM Bondarevich</h2>
+              <h3>WEB DEVELOPER</h3>
+            </div>
           </div>
-          <div class="myName">
-            <h2>ARTYOM Bondarevich</h2>
-            <h3>WEB DEVELOPER</h3>
-          </div>
-        </div>
+        </a>
         <nav id="main-nav">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">CONTACTS</a></li>
+            <li><a href="#greeting">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#contactMe">CONTACTS</a></li>
           </ul>
         </nav>
       </div>
@@ -69,24 +71,137 @@
     <!-- About me-->
     <section id="aboutMe">
       <div class="devider">
-
+        <p>
+          <img id="avatar" src="./res/img/avatar.jpg" alt="my foto">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+           officia deserunt mollit anim id est laborum."
+        </p>
       </div>
     </section>
 
-    <!-- Service (What I'm) -->
+    <!-- Service (What I can) -->
+    <section id="services">
+      <div class="devider">
+        <h2>SERVICES</h2>
+        <div class="scope">
+
+          <!-- 1 -->
+          <div id="responsiveWebPage">
+            <div class="skill-icon">
+              <i class="fas fa-mobile-alt"></i>
+              <i class="fas fa-tablet-alt margin-05"></i>
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="skill-header">
+              <h3>Responsive WEB pages</h3>
+            </div>
+            <div class="skill-description">
+              <p>
+                Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones).
+                Responsive Web Design is about using HTML and CSS to resize, hide, shrink, enlarge, or move the
+                content to make it look good on any screen.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div id="uxUiDesign">
+            <div class="skill-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="skill-header">
+              <h3>UX/UI Design</h3>
+            </div>
+            <div class="skill-description">
+              <p>
+                UX makes interfaces useful. <br>
+                UI makes interfaces beautiful.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div id="codeSkill">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="skill-header">
+              <h3>Code</h3>
+            </div>
+            <div class="skill-description">
+              <p>
+                I can сreate a simantic HTML code; Pure and easy-read HTML and CSS code; Copy the design and structure
+                of any website; Create an animation of the interface buttons, without Java, using CSS 5;
+                add any jQuery plugin; Install the plugin for visually impaired people on any platform or CMS;
+                add a feedback form and a survey form and much more.
+              </p>
+            </div>
+          </div>
+        </div> <!-- end .scope -->
+      </div> <!-- end .devider -->
+    </section>
 
     <!-- Project -->
+    <section id="project">
+      <div class="devider">
+        <h2>PROJECT</h2>
+        <div class="projectBox">
+          <div class="tripleContainer">
+            <!-- 1 -->
+            <div id="projectOne">
+              <a href="#"><h3>View more</h3></a>
+            </div>
+
+            <!-- 2 -->
+            <div id="projectTwo">
+              <a href="#"><h3>View more</h3></a>
+            </div>
+
+            <!-- 3 -->
+            <div id="projectTree">
+              <a href="#"><h3>View more</h3></a>
+            </div>
+          </div> <!-- end .tripleContainer -->
+
+          <div class="tripleContainer">
+            <!-- 4 -->
+            <div id="projectFour">
+              <a href="#"><h3>View more</h3></a>
+            </div>
+
+            <!-- 5 -->
+            <div id="projectFive">
+              <a href="#"><h3>View more</h3></a>
+            </div>
+
+            <!-- 6 -->
+            <div id="projectSix">
+              <a href="#"><h3>View more</h3></a>
+            </div>
+          </div> <!-- end .tripleContainer -->
 
 
+        </div> <!-- end .projectBox -->
+      </div><!-- end .devider -->
+    </section>
 
-      <!-- Footer -->
-      <!--<footer id="bottom-footer">
+
+    <!-- Footer -->
+    <footer id="contactMe">
+      <div class="contact">
         <ul>
-          <li>&copy; Design, code and ideas by Artyom Bondarevich</li>
           <li><i class="fas fa-phone"></i>&ensp;<i class="fab fa-whatsapp"></i>&ensp;<i class="fab fa-viber"></i>&ensp; +7 (929) 977-74-77</li>
           <li><i class="fas fa-envelope"></i> &ensp; as.fedotkin@gmail.com</li>
           <li><i class="fas fa-map-marker-alt"></i>&ensp; Russia, Moscow</li>
         </ul>
-      </footer> -->
+      </div>
+      <div class="copyright">
+        <p>&copy; Design, code and ideas by Artyom Bondarevich</p>
+      </div>
+    </footer>
+
   </body>
 </html>

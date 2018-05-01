@@ -1,6 +1,3 @@
-/* variables */
-/* mixins */
-/* global*/
 html {
   font-size: 16px;
   /* end body */ }
@@ -9,7 +6,10 @@ html {
     flex-direction: column;
     /* end #header */
     /* end #greeting */
-    /* end #aboutMe */ }
+    /* end #aboutMe */
+    /* end #whatICan */
+    /* end #project */
+    /* end footer */ }
     html body #header {
       margin: 0;
       padding: 0;
@@ -29,31 +29,34 @@ html {
         justify-content: space-between;
         align-items: center;
         /* end #main-nav  */ }
-        html body #header .devider .main-logo {
-          display: flex;
-          flex-direction: row; }
-          html body #header .devider .main-logo .logo {
-            width: 11%;
-            height: auto;
-            margin-right: 0.5rem; }
-            html body #header .devider .main-logo .logo img {
-              width: 100%;
-              height: 100%; }
-          html body #header .devider .main-logo .myName {
+        html body #header .devider a {
+          text-decoration: none;
+          color: black; }
+          html body #header .devider a .main-logo {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Fenix', serif; }
-            html body #header .devider .main-logo .myName h2 {
-              text-transform: uppercase;
-              font-size: 1.2rem;
-              font-weight: bold;
-              letter-spacing: 1px; }
-            html body #header .devider .main-logo .myName h3 {
-              text-transform: uppercase;
-              font-size: 1.5rem;
-              letter-spacing: 3px; }
+            flex-direction: row; }
+            html body #header .devider a .main-logo .logo {
+              width: 11%;
+              height: auto;
+              margin-right: 0.5rem; }
+              html body #header .devider a .main-logo .logo img {
+                width: 100%;
+                height: 100%; }
+            html body #header .devider a .main-logo .myName {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              font-family: 'Fenix', serif; }
+              html body #header .devider a .main-logo .myName h2 {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: bold;
+                letter-spacing: 1px; }
+              html body #header .devider a .main-logo .myName h3 {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                letter-spacing: 3px; }
         html body #header .devider #main-nav {
           font-family: 'Share', cursive; }
           html body #header .devider #main-nav ul li {
@@ -83,7 +86,7 @@ html {
         grid-area: 1 / 1 / 2 / 2;
         z-index: 2;
         background-color: white;
-        opacity: 0.6; }
+        opacity: 0; }
       html body #greeting .content {
         grid-area: 1 / 1 / 2 / 2;
         z-index: 3;
@@ -96,10 +99,11 @@ html {
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-direction: column;
           /* end .credo */ }
           html body #greeting .content .devider .credo {
+            background-color: rgba(0, 0, 0, 0.7);
             font-family: 'Exo', sans-serif;
-            border: 2px solid black;
             width: auto;
             display: flex;
             justify-content: center;
@@ -108,21 +112,502 @@ html {
             padding: 2rem;
             border-radius: 5px; }
             html body #greeting .content .devider .credo h2 {
-              font-size: 4.9rem;
-              color: black;
-              display: inline-block; }
+              font-size: 5.35rem;
+              color: white;
+              display: inline-block;
+              letter-spacing: 1px; }
             html body #greeting .content .devider .credo h3 {
               font-size: 1.9rem;
-              color: black;
+              color: white;
               display: inline-block;
-              font-weight: bold; }
+              font-weight: bold;
+              letter-spacing: 2px; }
     html body #aboutMe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 1px 4px 1px #767679;
       /* end .devider */ }
       html body #aboutMe .devider {
         width: 75rem;
         display: flex;
         align-items: center;
         justify-content: center; }
+        html body #aboutMe .devider p {
+          /* end .avatar */
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+          width: 65%;
+          font-family: 'Open Sans', sans-serif;
+          line-height: 1.3;
+          font-size: 1.3rem; }
+          html body #aboutMe .devider p #avatar {
+            width: 7rem;
+            height: 7rem;
+            float: left;
+            border-radius: 8px;
+            border: 3px solid white;
+            margin-right: 1rem; }
+    html body #services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid grey;
+      /* end .devider */ }
+      html body #services .devider {
+        width: 75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* end .scope */ }
+        html body #services .devider h2 {
+          text-align: center;
+          margin-top: 5rem;
+          font-family: 'Roboto', sans-serif;
+          font-size: 3rem; }
+        html body #services .devider .scope {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+          /* end #responsiveWebPage */
+          /*end #uxUiDesign */ }
+          html body #services .devider .scope #responsiveWebPage {
+            width: 30%; }
+            html body #services .devider .scope #responsiveWebPage .skill-icon {
+              color: deepskyblue;
+              font-size: 4rem;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              html body #services .devider .scope #responsiveWebPage .skill-icon .margin-05 {
+                margin: 0 0.5rem; }
+            html body #services .devider .scope #responsiveWebPage .skill-header {
+              font-size: 1.5rem;
+              text-align: center;
+              margin: 1rem 0;
+              font-family: 'Barlow', sans-serif; }
+            html body #services .devider .scope #responsiveWebPage .skill-description {
+              font-family: 'Open Sans', sans-serif;
+              font-size: 1.2rem;
+              color: #8E8E8E; }
+              html body #services .devider .scope #responsiveWebPage .skill-description p {
+                text-align: center; }
+              html body #services .devider .scope #responsiveWebPage .skill-description:hover {
+                color: black; }
+              html body #services .devider .scope #responsiveWebPage .skill-description:hover {
+                transition-property: color;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #services .devider .scope #responsiveWebPage .skill-description:not(:hover) {
+                transition-property: color;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+          html body #services .devider .scope #uxUiDesign {
+            width: 30%; }
+            html body #services .devider .scope #uxUiDesign .skill-icon {
+              color: deepskyblue;
+              font-size: 4rem;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+            html body #services .devider .scope #uxUiDesign .skill-header {
+              font-size: 1.5rem;
+              text-align: center;
+              margin: 1rem 0;
+              font-family: 'Barlow', sans-serif; }
+            html body #services .devider .scope #uxUiDesign .skill-description {
+              font-family: 'Open Sans', sans-serif;
+              font-size: 1.2rem;
+              color: #8E8E8E; }
+              html body #services .devider .scope #uxUiDesign .skill-description p {
+                text-align: center; }
+              html body #services .devider .scope #uxUiDesign .skill-description:hover {
+                color: black; }
+              html body #services .devider .scope #uxUiDesign .skill-description:hover {
+                transition-property: color;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #services .devider .scope #uxUiDesign .skill-description:not(:hover) {
+                transition-property: color;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+          html body #services .devider .scope #codeSkill {
+            width: 30%; }
+            html body #services .devider .scope #codeSkill .skill-icon {
+              color: deepskyblue;
+              font-size: 4rem;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+            html body #services .devider .scope #codeSkill .skill-header {
+              font-size: 1.5rem;
+              text-align: center;
+              margin: 1rem 0;
+              font-family: 'Barlow', sans-serif; }
+            html body #services .devider .scope #codeSkill .skill-description {
+              font-family: 'Open Sans', sans-serif;
+              font-size: 1.2rem;
+              color: #8E8E8E; }
+              html body #services .devider .scope #codeSkill .skill-description p {
+                text-align: center; }
+              html body #services .devider .scope #codeSkill .skill-description:hover {
+                color: black; }
+              html body #services .devider .scope #codeSkill .skill-description:hover {
+                transition-property: color;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #services .devider .scope #codeSkill .skill-description:not(:hover) {
+                transition-property: color;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+    html body #project {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid grey;
+      /* end .devider */ }
+      html body #project .devider {
+        width: 75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* end .projectBox */ }
+        html body #project .devider h2 {
+          text-align: center;
+          margin-top: 5rem;
+          margin-bottom: 3rem;
+          font-family: 'Roboto', sans-serif;
+          font-size: 3rem; }
+        html body #project .devider .projectBox {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          /* end .tripleContainer */ }
+          html body #project .devider .projectBox .tripleContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 1rem; }
+            html body #project .devider .projectBox .tripleContainer #projectOne {
+              background-image: url("../img/project/1.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 20.625rem;
+              height: 13.75rem;
+              margin: 0 1rem;
+              box-shadow: 0 2px 4px 2px #767679;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              html body #project .devider .projectBox .tripleContainer #projectOne:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4); }
+              html body #project .devider .projectBox .tripleContainer #projectOne:hover {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectOne:not(:hover) {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectOne h3 {
+                color: white;
+                text-align: center;
+                display: inline-block;
+                font-size: 1.2rem;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 1px;
+                padding: 1rem;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 5px;
+                cursor: pointer; }
+                html body #project .devider .projectBox .tripleContainer #projectOne h3:hover {
+                  background-color: rgba(0, 191, 255, 0.9); }
+                html body #project .devider .projectBox .tripleContainer #projectOne h3:hover {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+                html body #project .devider .projectBox .tripleContainer #projectOne h3:not(:hover) {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+            html body #project .devider .projectBox .tripleContainer #projectTwo {
+              background-image: url("../img/project/2.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 20.625rem;
+              height: 13.75rem;
+              margin: 0 1rem;
+              box-shadow: 0 2px 4px 2px #767679;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              html body #project .devider .projectBox .tripleContainer #projectTwo:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4); }
+              html body #project .devider .projectBox .tripleContainer #projectTwo:hover {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectTwo:not(:hover) {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectTwo h3 {
+                color: white;
+                text-align: center;
+                display: inline-block;
+                font-size: 1.2rem;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 1px;
+                padding: 1rem;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 5px;
+                cursor: pointer; }
+                html body #project .devider .projectBox .tripleContainer #projectTwo h3:hover {
+                  background-color: rgba(0, 191, 255, 0.9); }
+                html body #project .devider .projectBox .tripleContainer #projectTwo h3:hover {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+                html body #project .devider .projectBox .tripleContainer #projectTwo h3:not(:hover) {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+            html body #project .devider .projectBox .tripleContainer #projectTree {
+              background-image: url("../img/project/3.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 20.625rem;
+              height: 13.75rem;
+              margin: 0 1rem;
+              box-shadow: 0 2px 4px 2px #767679;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              html body #project .devider .projectBox .tripleContainer #projectTree:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4); }
+              html body #project .devider .projectBox .tripleContainer #projectTree:hover {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectTree:not(:hover) {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectTree h3 {
+                color: white;
+                text-align: center;
+                display: inline-block;
+                font-size: 1.2rem;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 1px;
+                padding: 1rem;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 5px;
+                cursor: pointer; }
+                html body #project .devider .projectBox .tripleContainer #projectTree h3:hover {
+                  background-color: rgba(0, 191, 255, 0.9); }
+                html body #project .devider .projectBox .tripleContainer #projectTree h3:hover {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+                html body #project .devider .projectBox .tripleContainer #projectTree h3:not(:hover) {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+          html body #project .devider .projectBox .tripleContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 3rem; }
+            html body #project .devider .projectBox .tripleContainer #projectFour {
+              background-image: url("../img/project/4.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 20.625rem;
+              height: 13.75rem;
+              margin: 0 1rem;
+              box-shadow: 0 2px 4px 2px #767679;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              html body #project .devider .projectBox .tripleContainer #projectFour:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4); }
+              html body #project .devider .projectBox .tripleContainer #projectFour:hover {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectFour:not(:hover) {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectFour h3 {
+                color: white;
+                text-align: center;
+                display: inline-block;
+                font-size: 1.2rem;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 1px;
+                padding: 1rem;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 5px;
+                cursor: pointer; }
+                html body #project .devider .projectBox .tripleContainer #projectFour h3:hover {
+                  background-color: rgba(0, 191, 255, 0.9); }
+                html body #project .devider .projectBox .tripleContainer #projectFour h3:hover {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+                html body #project .devider .projectBox .tripleContainer #projectFour h3:not(:hover) {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+            html body #project .devider .projectBox .tripleContainer #projectFive {
+              background-image: url("../img/project/5.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 20.625rem;
+              height: 13.75rem;
+              margin: 0 1rem;
+              box-shadow: 0 2px 4px 2px #767679;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              html body #project .devider .projectBox .tripleContainer #projectFive:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4); }
+              html body #project .devider .projectBox .tripleContainer #projectFive:hover {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectFive:not(:hover) {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectFive h3 {
+                color: white;
+                text-align: center;
+                display: inline-block;
+                font-size: 1.2rem;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 1px;
+                padding: 1rem;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 5px;
+                cursor: pointer; }
+                html body #project .devider .projectBox .tripleContainer #projectFive h3:hover {
+                  background-color: rgba(0, 191, 255, 0.9); }
+                html body #project .devider .projectBox .tripleContainer #projectFive h3:hover {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+                html body #project .devider .projectBox .tripleContainer #projectFive h3:not(:hover) {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+            html body #project .devider .projectBox .tripleContainer #projectSix {
+              background-image: url("../img/project/6.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 20.625rem;
+              height: 13.75rem;
+              margin: 0 1rem;
+              box-shadow: 0 2px 4px 2px #767679;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              html body #project .devider .projectBox .tripleContainer #projectSix:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4); }
+              html body #project .devider .projectBox .tripleContainer #projectSix:hover {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectSix:not(:hover) {
+                transition-property: box-shadow;
+                transition-duration: .2s;
+                transition-timing-function: linear;
+                transition-delay: 0s; }
+              html body #project .devider .projectBox .tripleContainer #projectSix h3 {
+                color: white;
+                text-align: center;
+                display: inline-block;
+                font-size: 1.2rem;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 1px;
+                padding: 1rem;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 5px;
+                cursor: pointer; }
+                html body #project .devider .projectBox .tripleContainer #projectSix h3:hover {
+                  background-color: rgba(0, 191, 255, 0.9); }
+                html body #project .devider .projectBox .tripleContainer #projectSix h3:hover {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+                html body #project .devider .projectBox .tripleContainer #projectSix h3:not(:hover) {
+                  transition-property: background-color;
+                  transition-duration: .2s;
+                  transition-timing-function: linear;
+                  transition-delay: 0s; }
+    html body #contactMe {
+      height: 20rem;
+      background-color: #434345;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      html body #contactMe .contact ul li {
+        display: inline-block;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        color: #848488; }
+      html body #contactMe .copyright {
+        margin-top: 1.5rem;
+        border-top: 1px solid #636366; }
+        html body #contactMe .copyright p {
+          padding: 1rem;
+          font-size: 1.2rem;
+          color: #848488; }
 
 /* end html */
 

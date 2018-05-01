@@ -1,0 +1,76 @@
+@mixin skill-icon {
+  color: deepskyblue;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin skill-header {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-family: 'Barlow', sans-serif;
+}
+
+@mixin transition($property) { //с плавным возвратом
+  &:hover {
+    transition-property: $property; //свойство
+    transition-duration: .2s; //Продолжительность перехода
+    transition-timing-function: linear; //Функция перехода
+    transition-delay: 0s; //Задержка перехода
+  }
+  &:not(:hover) {
+    transition-property: $property; //свойство
+    transition-duration: .2s; //Продолжительность перехода
+    transition-timing-function: linear; //Функция перехода
+    transition-delay: 0s; //Задержка перехода
+  }
+}
+
+@mixin skill-description{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #8E8E8E;
+  p {
+    text-align: center;
+  }
+  &:hover {
+    color: black;
+  }
+  @include transition(color);
+}
+
+@mixin project($urlBackground) {
+  background-image: url($urlBackground);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20.625rem;
+  height: 13.75rem;
+  margin: 0 1rem;
+  box-shadow: 0 2px 4px 2px #767679;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.4), 0 10px 10px rgba(0,0,0,0.4);
+  }
+  @include transition(box-shadow);
+  h3 {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 191, 255, 0.9);
+    }
+    @include transition(background-color);
+  }
+}
