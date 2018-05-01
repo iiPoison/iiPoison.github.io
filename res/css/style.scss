@@ -137,6 +137,20 @@ html {
             display: flex;
           }
         }
+        @media only screen and (max-width: 410px) {
+          #imgAnchor {
+            height: 2.2rem;
+            width: 2.2rem;
+          }
+
+          #mobileMenu {
+            ul {
+              li {
+                margin: 0 0.75rem;
+              }
+            }
+          }
+        }
       } /* end devider */
     } /* end #header */
 
@@ -216,6 +230,14 @@ html {
                 font-size: 0.77rem;
               }
             }
+            @media only screen and (max-width: 410px) {
+              h2 {
+                font-size: 2rem;
+              }
+              h3 {
+                font-size: 0.6rem;
+              }
+            }
           } /* end .credo */
           @media only screen and (max-width: 450px) {
             .credo {
@@ -256,6 +278,17 @@ html {
           p {
             line-height: 1.2;
             font-size: 1.1rem;
+          }
+        }
+        @media only screen and (max-width: 410px) {
+          p {
+            #avatar {
+              width: 5rem;
+              height: 5rem;
+            }
+            width: 90%;
+            line-height: 1.1;
+            font-size: 0.9rem;
           }
         }
       } /* end .devider */
@@ -590,6 +623,13 @@ html {
         .copyright {
           p {
             font-size: 0.9rem;
+          }
+        }
+      }
+      @media only screen and (max-width: 450px) {
+        .copyright {
+          p {
+            font-size: 0.8rem;
           }
         }
       }

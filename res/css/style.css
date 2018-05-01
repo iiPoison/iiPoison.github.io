@@ -114,6 +114,12 @@ html {
             display: none; }
           html body #header .devider #mobileMenu {
             display: flex; } }
+        @media only screen and (max-width: 410px) {
+          html body #header .devider #imgAnchor {
+            height: 2.2rem;
+            width: 2.2rem; }
+          html body #header .devider #mobileMenu ul li {
+            margin: 0 0.75rem; } }
     html body #greeting {
       margin-top: 4rem;
       background-image: url("../img/background/sketched-low.jpg");
@@ -181,6 +187,11 @@ html {
                 font-size: 2.45rem; }
               html body #greeting .content .devider .credo h3 {
                 font-size: 0.77rem; } }
+            @media only screen and (max-width: 410px) {
+              html body #greeting .content .devider .credo h2 {
+                font-size: 2rem; }
+              html body #greeting .content .devider .credo h3 {
+                font-size: 0.6rem; } }
           @media only screen and (max-width: 450px) {
             html body #greeting .content .devider .credo {
               padding: 1rem; } }
@@ -214,6 +225,14 @@ html {
           html body #aboutMe .devider p {
             line-height: 1.2;
             font-size: 1.1rem; } }
+        @media only screen and (max-width: 410px) {
+          html body #aboutMe .devider p {
+            width: 90%;
+            line-height: 1.1;
+            font-size: 0.9rem; }
+            html body #aboutMe .devider p #avatar {
+              width: 5rem;
+              height: 5rem; } }
     html body #services {
       display: flex;
       justify-content: center;
@@ -801,6 +820,9 @@ html {
       @media only screen and (max-width: 450px) {
         html body #contactMe .copyright p {
           font-size: 0.9rem; } }
+      @media only screen and (max-width: 450px) {
+        html body #contactMe .copyright p {
+          font-size: 0.8rem; } }
     @media only screen and (max-width: 768px) {
       html body #contactMe {
         height: 15rem; } }
