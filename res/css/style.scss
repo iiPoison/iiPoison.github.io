@@ -208,8 +208,20 @@ html {
                 font-size: 0.9rem;
               }
             }
+            @media only screen and (max-width: 450px) {
+              h2 {
+                font-size: 2.45rem;
+              }
+              h3 {
+                font-size: 0.77rem;
+              }
+            }
           } /* end .credo */
-
+          @media only screen and (max-width: 450px) {
+            .credo {
+              padding: 1rem;
+            }
+          }
         } /* end .devider */
       } /* end .content */
     } /* end #greeting */
@@ -437,6 +449,22 @@ html {
                 height: calc(13.75rem*1.3);
               }
             }
+            @media only screen and (max-width: 450px) {
+              #projectOne {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0;
+              }
+              #projectTwo {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0;
+              }
+              #projectTree {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+              }
+            }
           } /* end .tripleContainer */
           @media only screen and (max-width: 1024px) {
             .tripleContainer {
@@ -493,6 +521,23 @@ html {
                 margin: 1.5rem 0;
               }
             }
+            @media only screen and (max-width: 450px) {
+              #projectFour {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0;
+              }
+              #projectFive  {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0;
+              }
+              #projectSix {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0;
+              }
+            }
           } /* end .tripleContainer */
           @media only screen and (max-width: 1024px) {
             .tripleContainer {
@@ -525,6 +570,11 @@ html {
               margin: 0.5rem 0;
             }
           }
+          @media only screen and (max-width: 450px) {
+            li {
+              font-size: 1rem;
+            }
+          }
         }
       }
       .copyright {
@@ -536,10 +586,22 @@ html {
           color: #848488;
         }
       }
+      @media only screen and (max-width: 450px) {
+        .copyright {
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
     } /* end footer */
     @media only screen and (max-width: 768px) {
       #contactMe {
         height: 15rem;
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      #contactMe {
+        height: 12rem;
       }
     }
   } /* end body */

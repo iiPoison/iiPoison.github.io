@@ -176,6 +176,14 @@ html {
                 font-size: 3rem; }
               html body #greeting .content .devider .credo h3 {
                 font-size: 0.9rem; } }
+            @media only screen and (max-width: 450px) {
+              html body #greeting .content .devider .credo h2 {
+                font-size: 2.45rem; }
+              html body #greeting .content .devider .credo h3 {
+                font-size: 0.77rem; } }
+          @media only screen and (max-width: 450px) {
+            html body #greeting .content .devider .credo {
+              padding: 1rem; } }
     html body #aboutMe {
       display: flex;
       justify-content: center;
@@ -558,6 +566,18 @@ html {
               html body #project .devider .projectBox .tripleContainer #projectTree {
                 width: calc(20.625rem*1.3);
                 height: calc(13.75rem*1.3); } }
+            @media only screen and (max-width: 450px) {
+              html body #project .devider .projectBox .tripleContainer #projectOne {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0; }
+              html body #project .devider .projectBox .tripleContainer #projectTwo {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0; }
+              html body #project .devider .projectBox .tripleContainer #projectTree {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8); } }
           @media only screen and (max-width: 1024px) {
             html body #project .devider .projectBox .tripleContainer {
               flex-direction: column; } }
@@ -735,6 +755,19 @@ html {
                 width: calc(20.625rem*1.3);
                 height: calc(13.75rem*1.3);
                 margin: 1.5rem 0; } }
+            @media only screen and (max-width: 450px) {
+              html body #project .devider .projectBox .tripleContainer #projectFour {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0; }
+              html body #project .devider .projectBox .tripleContainer #projectFive {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0; }
+              html body #project .devider .projectBox .tripleContainer #projectSix {
+                width: calc(20.625rem*0.8);
+                height: calc(13.75rem*0.8);
+                margin: 1.5rem 0; } }
           @media only screen and (max-width: 1024px) {
             html body #project .devider .projectBox .tripleContainer {
               flex-direction: column; } }
@@ -755,6 +788,9 @@ html {
           display: block;
           text-align: center;
           margin: 0.5rem 0; } }
+      @media only screen and (max-width: 450px) {
+        html body #contactMe .contact ul li {
+          font-size: 1rem; } }
       html body #contactMe .copyright {
         margin-top: 1.5rem;
         border-top: 1px solid #636366; }
@@ -762,9 +798,15 @@ html {
           padding: 1rem;
           font-size: 1.2rem;
           color: #848488; }
+      @media only screen and (max-width: 450px) {
+        html body #contactMe .copyright p {
+          font-size: 0.9rem; } }
     @media only screen and (max-width: 768px) {
       html body #contactMe {
         height: 15rem; } }
+    @media only screen and (max-width: 450px) {
+      html body #contactMe {
+        height: 12rem; } }
 
 /* end html */
 
