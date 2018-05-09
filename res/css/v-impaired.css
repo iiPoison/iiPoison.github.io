@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column; }
+  body #paragraf {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    body #paragraf .devider {
+      width: 75rem; }
+      body #paragraf .devider h2 {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 3rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold; }
+      body #paragraf .devider p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        text-indent: 1rem;
+        margin-bottom: 1rem; }
+  body #images {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    body #images .devider {
+      width: 75rem; }
+      body #images .devider .sampleImages {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0; }
+        body #images .devider .sampleImages img {
+          width: 30%;
+          height: 30%;
+          margin: 1rem;
+          border: 1px solid grey; }
+  body #video {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    body #video .devider {
+      width: 75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body #video .devider video {
+        width: 95%;
+        margin-bottom: 2rem;
+        border: 1px solid grey; }
+
+/*# sourceMappingURL=v-impaired.css.map */
