@@ -14,6 +14,25 @@ body {
         font-size: 3rem;
         font-family: 'Roboto', sans-serif;
         font-weight: bold; }
+      body #paragraf .devider .bvi-section {
+        background-color: #11222E;
+        height: 2rem;
+        width: 180px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0; }
+        body #paragraf .devider .bvi-section:hover {
+          background-color: red;
+          transition-property: background-color;
+          transition-duration: .2s;
+          transition-timing-function: linear;
+          transition-delay: 0; }
+        body #paragraf .devider .bvi-section a {
+          color: white;
+          font-size: 1.2rem;
+          text-decoration: none; }
       body #paragraf .devider p {
         font-family: 'Open Sans', sans-serif;
         font-size: 1.2rem;
