@@ -9,8 +9,7 @@
     width: 75rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
+    justify-content: space-between; }
     #summary .devider .left {
       background-color: #152B39;
       width: 40%; }
@@ -139,23 +138,143 @@
             #summary .devider .left #professionalSkills ul li span {
               margin-left: 0.5rem; }
     #summary .devider .right {
+      margin-top: 2rem;
       width: 60%;
       height: 600px; }
       #summary .devider .right #workExperience {
-        margin: 1rem 3rem; }
-        #summary .devider .right #workExperience h3 {
-          margin-bottom: 0.5rem; }
+        margin: 1rem 3rem;
+        margin-bottom: 3rem; }
+        #summary .devider .right #workExperience .boxIconHeader {
+          margin-bottom: 0.5rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          #summary .devider .right #workExperience .boxIconHeader .boxIcon {
+            color: white;
+            background-color: #152B39;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 7px; }
+          #summary .devider .right #workExperience .boxIconHeader h3 {
+            margin-left: 1rem;
+            color: #152B39;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.9rem; }
+        #summary .devider .right #workExperience ul {
+          margin-left: 5rem;
+          margin-bottom: 2rem;
+          font-family: 'Open Sans', sans-serif;
+          color: #152B39; }
+          #summary .devider .right #workExperience ul li {
+            margin: 0.3rem 0; }
+            #summary .devider .right #workExperience ul li span {
+              font-weight: normal;
+              font-size: 1rem;
+              color: DimGray; }
+          #summary .devider .right #workExperience ul li:first-child {
+            list-style-type: disc;
+            font-weight: bold;
+            font-size: 1.2rem; }
+          #summary .devider .right #workExperience ul li:nth-child(2) {
+            font-weight: normal;
+            font-size: 0.9rem;
+            font-weight: bold; }
+          #summary .devider .right #workExperience ul li:nth-child(3) {
+            color: DimGray;
+            font-size: 0.9rem; }
       #summary .devider .right #personalSkills {
-        margin: 1rem 3rem; }
-        #summary .devider .right #personalSkills h3 {
-          margin-bottom: 0.5rem; }
+        margin: 1rem 3rem;
+        margin-bottom: 3rem; }
+        #summary .devider .right #personalSkills .boxIconHeader {
+          margin-bottom: 0.5rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          #summary .devider .right #personalSkills .boxIconHeader .boxIcon {
+            color: white;
+            background-color: #152B39;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 7px; }
+          #summary .devider .right #personalSkills .boxIconHeader h3 {
+            margin-left: 1rem;
+            color: #152B39;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.9rem; }
+        #summary .devider .right #personalSkills ul {
+          margin-left: 4.5rem; }
       #summary .devider .right #education {
-        margin: 1rem 3rem; }
-        #summary .devider .right #education h3 {
-          margin-bottom: 0.5rem; }
+        margin: 1rem 3rem;
+        margin-bottom: 3rem; }
+        #summary .devider .right #education .boxIconHeader {
+          margin-bottom: 0.5rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          #summary .devider .right #education .boxIconHeader .boxIcon {
+            color: white;
+            background-color: #152B39;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 7px; }
+          #summary .devider .right #education .boxIconHeader h3 {
+            margin-left: 1rem;
+            color: #152B39;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.9rem; }
+        #summary .devider .right #education ul {
+          margin-left: 5rem;
+          margin-bottom: 2rem;
+          font-family: 'Open Sans', sans-serif;
+          color: #152B39; }
+          #summary .devider .right #education ul li {
+            margin: 0.3rem 0; }
+            #summary .devider .right #education ul li span {
+              font-weight: normal;
+              font-size: 1rem;
+              color: DimGray; }
+          #summary .devider .right #education ul li:first-child {
+            list-style-type: disc;
+            font-weight: bold;
+            font-size: 1.2rem; }
+          #summary .devider .right #education ul li:nth-child(2) {
+            font-weight: normal;
+            font-size: 0.9rem;
+            font-weight: bold; }
+          #summary .devider .right #education ul li:nth-child(3) {
+            color: DimGray;
+            font-size: 0.9rem; }
       #summary .devider .right #proficiency {
         margin: 1rem 3rem; }
-        #summary .devider .right #proficiency h3 {
-          margin-bottom: 0.5rem; }
+        #summary .devider .right #proficiency .boxIconHeader {
+          margin-bottom: 0.5rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          #summary .devider .right #proficiency .boxIconHeader .boxIcon {
+            color: white;
+            background-color: #152B39;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 7px; }
+          #summary .devider .right #proficiency .boxIconHeader h3 {
+            margin-left: 1rem;
+            color: #152B39;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.9rem; }
+        #summary .devider .right #proficiency ul {
+          margin-left: 4.5rem; }
 
 /*# sourceMappingURL=summary.css.map */
