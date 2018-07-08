@@ -16,7 +16,7 @@ html {
       padding: 0;
       position: fixed;
       z-index: 10;
-      height: 4rem;
+      height: 6.5rem;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -26,101 +26,119 @@ html {
       html body #header .devider {
         width: 75rem;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        /* end a */
-        /* end #primaryMenu */
-        /* end mobileMenu */ }
-        html body #header .devider #logoAnchor {
-          text-decoration: none;
-          color: black;
-          width: 18rem; }
-          html body #header .devider #logoAnchor .main-logo {
-            display: flex;
-            flex-direction: row;
-            width: auto; }
-            html body #header .devider #logoAnchor .main-logo .logo {
-              width: 13%;
-              height: auto;
-              margin-right: 0.5rem;
-              margin-left: 0.5rem; }
-              html body #header .devider #logoAnchor .main-logo .logo img {
-                width: 100%;
-                height: 100%; }
-            html body #header .devider #logoAnchor .main-logo .myName {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              font-family: 'Fenix', serif; }
-              html body #header .devider #logoAnchor .main-logo .myName h2 {
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                font-weight: bold;
-                letter-spacing: 1px; }
-              html body #header .devider #logoAnchor .main-logo .myName h3 {
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                letter-spacing: 3px; }
-            @media only screen and (max-width: 650px) {
-              html body #header .devider #logoAnchor .main-logo .logo {
-                margin-left: 1rem;
-                width: 18%; }
-              html body #header .devider #logoAnchor .main-logo .myName {
-                display: none; } }
-        html body #header .devider #imgAnchor {
-          display: none; }
-        @media only screen and (max-width: 650px) {
-          html body #header .devider #logoAnchor {
-            display: none; }
-          html body #header .devider #imgAnchor {
-            display: inline-block;
-            height: 2.5rem;
-            width: 2.5rem;
-            margin-left: 1rem; }
-            html body #header .devider #imgAnchor img {
-              height: 100%;
-              width: 100%; } }
-        html body #header .devider #primaryMenu {
-          font-family: 'Share', cursive;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        html body #header .devider .accessoryNav {
+          width: 100%;
+          height: 2.5rem;
+          background-color: #434345;
           display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-          justify-content: flex-end;
-          /* end .primaryMenu */ }
-          html body #header .devider #primaryMenu ul li {
-            display: inline-block;
-            font-size: 1.2rem;
-            margin: 0 1.25rem; }
-            html body #header .devider #primaryMenu ul li a {
-              padding-bottom: 1rem;
-              border-bottom: 3px solid white;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          html body #header .devider .accessoryNav .fastContact {
+            margin-left: 1rem; }
+            html body #header .devider .accessoryNav .fastContact li {
+              display: inline-block;
+              font-size: 1rem;
+              color: #A5A5A7;
+              margin-right: 1rem; }
+              html body #header .devider .accessoryNav .fastContact li::after {
+                content: "|";
+                margin-left: 1rem; }
+          html body #header .devider .accessoryNav #toggleLanguage {
+            font-family: 'Share', cursive;
+            display: flex;
+            flex-direction: column;
+            margin-right: 1rem; }
+            html body #header .devider .accessoryNav #toggleLanguage ul li {
+              display: inline-block;
+              font-size: 1rem;
               text-decoration: none;
-              color: #000000; }
-              html body #header .devider #primaryMenu ul li a:hover {
-                border-bottom: 3px solid deepskyblue; }
-        html body #header .devider #mobileMenu {
-          display: none;
-          justify-content: center;
-          margin-bottom: 0.75rem; }
-          html body #header .devider #mobileMenu ul li {
-            display: inline-block;
-            margin: 0 1.5rem; }
-            html body #header .devider #mobileMenu ul li a {
-              text-decoration: none;
-              color: black; }
-        @media only screen and (max-width: 768px) {
-          html body #header .devider #primaryMenu {
-            display: none; }
-          html body #header .devider #mobileMenu {
-            display: flex; } }
-        @media only screen and (max-width: 410px) {
-          html body #header .devider #imgAnchor {
-            height: 2.2rem;
-            width: 2.2rem; }
-          html body #header .devider #mobileMenu ul li {
-            margin: 0 0.75rem; } }
+              color: #A5A5A7;
+              cursor: pointer; }
+              html body #header .devider .accessoryNav #toggleLanguage ul li:nth-child(2) {
+                margin: 0 0.3rem; }
+        html body #header .devider .basicNav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 4rem;
+          /* end a */
+          /* end #primaryMenu */
+          /* end mobileMenu */ }
+          @media only screen and (max-width: 650px) {
+            html body #header .devider .basicNav {
+              justify-content: space-around; } }
+          html body #header .devider .basicNav #logoAnchor {
+            text-decoration: none;
+            color: black;
+            width: 18rem;
+            margin-left: 1rem; }
+            html body #header .devider .basicNav #logoAnchor .main-logo {
+              display: flex;
+              flex-direction: row;
+              width: auto; }
+              html body #header .devider .basicNav #logoAnchor .main-logo .myName {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Fenix', serif; }
+                html body #header .devider .basicNav #logoAnchor .main-logo .myName h2 {
+                  text-transform: uppercase;
+                  font-size: 1.2rem;
+                  font-weight: bold;
+                  letter-spacing: 1px; }
+                html body #header .devider .basicNav #logoAnchor .main-logo .myName h3 {
+                  text-transform: uppercase;
+                  font-size: 1.5rem;
+                  letter-spacing: 3px; }
+              @media only screen and (max-width: 650px) {
+                html body #header .devider .basicNav #logoAnchor .main-logo .myName {
+                  display: none; } }
+          @media only screen and (max-width: 650px) {
+            html body #header .devider .basicNav #logoAnchor {
+              display: none; } }
+          html body #header .devider .basicNav #primaryMenu {
+            font-family: 'Share', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            /* end .primaryMenu */ }
+            html body #header .devider .basicNav #primaryMenu ul li {
+              display: inline-block;
+              font-size: 1.2rem;
+              margin: 0 1.25rem; }
+              html body #header .devider .basicNav #primaryMenu ul li a {
+                padding-bottom: 1rem;
+                border-bottom: 3px solid white;
+                text-decoration: none;
+                color: #000000; }
+                html body #header .devider .basicNav #primaryMenu ul li a:hover {
+                  border-bottom: 3px solid deepskyblue; }
+          html body #header .devider .basicNav #mobileMenu {
+            display: none;
+            justify-content: center;
+            margin-bottom: 0.75rem; }
+            html body #header .devider .basicNav #mobileMenu ul li {
+              display: inline-block;
+              margin: 0 1.5rem; }
+              html body #header .devider .basicNav #mobileMenu ul li a {
+                text-decoration: none;
+                color: black; }
+          @media only screen and (max-width: 768px) {
+            html body #header .devider .basicNav #primaryMenu {
+              display: none; }
+            html body #header .devider .basicNav #mobileMenu {
+              display: inline-block; } }
+          @media only screen and (max-width: 410px) {
+            html body #header .devider .basicNav #mobileMenu ul li {
+              margin: 0 0.75rem; } }
     html body #greeting {
       margin-top: 4rem;
       background-image: url("../img/background/sketched-low.jpg");
@@ -220,7 +238,7 @@ html {
             height: 7rem;
             float: left;
             border-radius: 8px;
-            border: 1px solid black;
+            border: 1px solid grey;
             box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
             margin-right: 1rem; }
           html body #aboutMe .devider p a {
@@ -806,7 +824,7 @@ html {
         display: inline-block;
         margin: 0 1rem;
         font-size: 1.2rem;
-        color: #848488; }
+        color: #A5A5A7; }
       @media only screen and (max-width: 768px) {
         html body #contactMe .contact ul li {
           display: block;
@@ -821,7 +839,7 @@ html {
         html body #contactMe .copyright ul {
           padding: 1rem;
           font-size: 1.2rem;
-          color: #848488; }
+          color: #A5A5A7; }
           html body #contactMe .copyright ul li {
             text-align: center;
             padding: 0.50rem; }
@@ -842,22 +860,6 @@ html {
 /*--------------------------------------------------
                       ╨┐╨╡╤А╨╡╨║╨╗╤О╤З╨░╤В╨╡╨╗╤М ╤П╨╖╤Л╨║╨╛╨▓
 ----------------------------------------------------*/
-#toggleLanguage {
-  font-family: 'Share', cursive;
-  display: flex;
-  flex-direction: column; }
-  #toggleLanguage ul li {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 0 1.25rem;
-    text-decoration: none;
-    color: #000000;
-    background-color: grey;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    cursor: pointer; }
-
 .ru_language {
   display: none; }
 

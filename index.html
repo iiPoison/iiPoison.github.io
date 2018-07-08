@@ -44,60 +44,67 @@
     <header id=header>
       <div class="devider">
 
-        <a id="logoAnchor" href="index.html">
-          <div class="main-logo">
-            <div class="logo">
-              <img src="./res/img/logo/logo.svg">
+        <div class="accessoryNav">
+          <ul class="fastContact">
+            <li><i class="fas fa-phone"></i> +7 (929) 977-74-77</li>
+            <li><i class="fas fa-envelope"></i> inbox@bondarevich.com</li>
+          </ul>
+
+          <nav id=toggleLanguage>
+            <ul>
+              <li id="rulanguage">RU</li>
+              <li>/</li>
+              <li id="enlanguage">EN</li>
+            </ul>
+          </nav>
+
+        </div> <!-- accessoryNav -->
+
+        <div class="basicNav">
+
+          <a id="logoAnchor" href="index.html">
+            <div class="main-logo">
+              <!-- тут возможно будет логотип -->
+              <div class="myName">
+                <h2>ARTYOM Bondarevich</h2>
+                <h3>WEB DEVELOPER</h3>
+              </div>
             </div>
-            <div class="myName">
-              <h2>ARTYOM Bondarevich</h2>
-              <h3>WEB DEVELOPER</h3>
-            </div>
-          </div>
-        </a>
+          </a>
 
-        <a id="imgAnchor" href="index.html">
-          <img src="./res/img/logo/logo.svg">
-        </a>
+          <nav id="primaryMenu">
+            <ul>
+              <li>
+                <span class="en_language"><a href="#greeting">HOME</a></span>
+                <span class="ru_language"><a href="#greeting">ГЛАВНАЯ</a></span>
+              </li>
+              <li>
+                <span class="en_language"><a href="#services">SERVICES</a></span>
+                <span class="ru_language"><a href="#services">УСЛУГИ</a></span>
+              </li>
+              <li>
+                <span class="en_language"><a href="#project">PROJECTS</a></span>
+                <span class="ru_language"><a href="#project">ПРОЕКТЫ</a></span>
+              </li>
+              <li>
+                <span class="en_language"><a href="#contactMe">CONTACTS</a></span>
+                <span class="ru_language"><a href="#contactMe">КОНТАКТЫ</a></span>
+              </li>
+            </ul>
+          </nav>
 
-        <nav id="primaryMenu">
-          <ul>
-            <li>
-              <span class="en_language"><a href="#greeting">HOME</a></span>
-              <span class="ru_language"><a href="#greeting">ГЛАВНАЯ</a></span>
-            </li>
-            <li>
-              <span class="en_language"><a href="#services">SERVICES</a></span>
-              <span class="ru_language"><a href="#services">УСЛУГИ</a></span>
-            </li>
-            <li>
-              <span class="en_language"><a href="#project">PROJECTS</a></span>
-              <span class="ru_language"><a href="#project">ПРОЕКТЫ</a></span>
-            </li>
-            <li>
-              <span class="en_language"><a href="#contactMe">CONTACTS</a></span>
-              <span class="ru_language"><a href="#contactMe">КОНТАКТЫ</a></span>
-            </li>
-          </ul>
-        </nav>
+          <nav id="mobileMenu">
+            <ul>
+              <li><a href="#greeting"><i class="fas fa-2x fa-home"></i></a></li> <!-- fa-2x -->
+              <li><a href="#services"><i class="fas fa-2x fa-cogs"></i></a></li>
+              <li><a href="#project"><i class="fas fa-2x fa-images"></i></a></li>
+              <li><a href="#contactMe"><i class="fas fa-2x fa-phone"></i></a></li>
+            </ul>
+          </nav>
 
-        <nav id="mobileMenu">
-          <ul>
-            <li><a href="#greeting"><i class="fas fa-home"></i></a></li> <!-- fa-2x -->
-            <li><a href="#services"><i class="fas fa-cogs"></i></a></li>
-            <li><a href="#project"><i class="fas fa-images"></i></a></li>
-            <li><a href="#contactMe"><i class="fas fa-phone"></i></a></li>
-          </ul>
-        </nav>
+        </div> <!-- end .basicNav -->
 
-        <nav id=toggleLanguage>
-          <ul>
-            <li id="rulanguage">RU</li>
-            <li id="enlanguage">EN</li>
-          </ul>
-        </nav>
-
-      </div>
+      </div> <!-- end .devider -->
     </header>
 
     <!-- Greeting + baner -->
@@ -334,9 +341,9 @@
       </div>
       <div class="copyright">
         <ul>
-          <li>&copy; Design, code and ideas by Artyom Bondarevich.</li>
-          <li>Russia, Moscow.</li>
-          <li>2018.</li>
+          <li>&copy; Design, code and ideas by Artyom Bondarevich</li>
+          <li>Russia, Moscow</li>
+          <li>2018</li>
         </ul>
       </div>
     </footer>
