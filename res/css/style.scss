@@ -264,7 +264,8 @@ html {
             height: 7rem;
             float: left;
             border-radius: 8px;
-            border: 3px solid white;
+            border: 1px solid black;
+            box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
             margin-right: 1rem;
           } /* end .avatar */
           margin-top: 3rem;
@@ -654,3 +655,133 @@ html {
     }
   } /* end body */
 } /* end html */
+
+/*--------------------------------------------------
+                      переключатель языков
+----------------------------------------------------*/
+
+#toggleLanguage {
+  font-family: 'Share', cursive;
+  display: flex;
+  flex-direction: column;
+  //align-items: flex-end;
+  //justify-content: flex-end;
+  ul {
+    li{
+      display: inline-block;
+      font-size: 1.2rem;
+      margin: 0 1.25rem;
+      text-decoration: none;
+      color: #000000;
+      background-color: grey;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid grey;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.ru_language {
+  display: none;
+}
+
+.en_language {
+  display: inline;
+}
+
+#rulanguage {
+
+}
+
+#enlanguage {
+
+}
+
+
+/*--------------------------------------------------
+        Настройки для элементов русского языка
+--------------------------------------------------*/
+#primaryMenu {
+    .ru_language{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.1rem;
+    }
+}
+
+#greeting {
+	h2 {
+    .ru_language {
+      font-family: 'Exo 2', sans-serif;
+      text-transform: uppercase;
+      font-size: 5rem;
+      font-weight: 300;
+    }
+  }
+  h3 {
+    text-align: center;
+    .ru_language {
+      font-family: 'Exo 2', sans-serif;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    h2 {
+      .ru_language {
+        font-size: 3.5rem;
+      }
+
+    }
+    h3 {
+      .ru_language {
+        font-size: 1.18rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 560px) {
+    h2 {
+      .ru_language {
+        font-size: 2.8rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    h2 {
+      .ru_language {
+        font-size: 2rem;
+      }
+
+    }
+    h3 {
+      .ru_language {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+#aboutMe {
+  .ru_language {
+    font-family: 'Open Sans', sans-serif; //он же и на анг. языке
+  }
+}
+
+#services {
+  h2 {
+    .ru_language {
+      font-family: 'Roboto Mono', monospace;
+    }
+  }
+}
+
+#project {
+  h2 {
+    .ru_language {
+      font-family: 'Roboto Mono', monospace;
+    }
+  }
+}

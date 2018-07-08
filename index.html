@@ -19,13 +19,24 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> <!-- main text -->
+    <!-- RU Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"> <!-- кнопки верхнего RU_меню -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700" rel="stylesheet"> <!-- RU_credo -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet"> <!--RU_заголовки -->
+
     <!--
-      font-family: 'Fenix', serif; 
+      font-family: 'Fenix', serif;
       font-family: 'Share', cursive;
       font-family: 'Roboto', sans-serif;
       font-family: 'Barlow', sans-serif;
       font-family: 'Exo', sans-serif;
       font-family: 'Open Sans', sans-serif;
+
+      **RU**
+      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Exo 2', sans-serif;
+      font-family: 'Roboto Mono', monospace;
+
    -->
   </head>
   <body>
@@ -51,19 +62,38 @@
 
         <nav id="primaryMenu">
           <ul>
-            <li><a href="#greeting">HOME</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#project">PROJECTS</a></li>
-            <li><a href="#contactMe">CONTACTS</a></li>
+            <li>
+              <span class="en_language"><a href="#greeting">HOME</a></span>
+              <span class="ru_language"><a href="#greeting">ГЛАВНАЯ</a></span>
+            </li>
+            <li>
+              <span class="en_language"><a href="#services">SERVICES</a></span>
+              <span class="ru_language"><a href="#services">УСЛУГИ</a></span>
+            </li>
+            <li>
+              <span class="en_language"><a href="#project">PROJECTS</a></span>
+              <span class="ru_language"><a href="#project">ПРОЕКТЫ</a></span>
+            </li>
+            <li>
+              <span class="en_language"><a href="#contactMe">CONTACTS</a></span>
+              <span class="ru_language"><a href="#contactMe">КОНТАКТЫ</a></span>
+            </li>
           </ul>
         </nav>
 
         <nav id="mobileMenu">
           <ul>
-            <li><a href="#greeting"><i class="fas fa-2x fa-home"></i></a></li>
-            <li><a href="#services"><i class="fas fa-2x fa-cogs"></i></a></li>
-            <li><a href="#project"><i class="fas fa-2x fa-images"></i></a></li>
-            <li><a href="#contactMe"><i class="fas fa-2x fa-phone"></i></a></li>
+            <li><a href="#greeting"><i class="fas fa-home"></i></a></li> <!-- fa-2x -->
+            <li><a href="#services"><i class="fas fa-cogs"></i></a></li>
+            <li><a href="#project"><i class="fas fa-images"></i></a></li>
+            <li><a href="#contactMe"><i class="fas fa-phone"></i></a></li>
+          </ul>
+        </nav>
+
+        <nav id=toggleLanguage>
+          <ul>
+            <li id="rulanguage">RU</li>
+            <li id="enlanguage">EN</li>
           </ul>
         </nav>
 
@@ -78,8 +108,14 @@
       <div class="content">
         <div class="devider">
           <div class="credo">
-            <h2>I SEE A SOLUTION</h2>
-            <h3>WHILE THE CODE HASN'T BEEN WRITTEN YET</h3>
+            <h2>
+              <span class="en_language">I SEE A SOLUTION</span>
+              <span class="ru_language">Я вижу решение</span>
+            </h2>
+            <h3>
+              <span class="en_language">WHILE THE CODE HASN'T BEEN WRITTEN YET</span>
+              <span class="ru_language">До того, как написан код</span>
+            </h3>
           </div>
         </div>
       </div>
@@ -90,11 +126,20 @@
       <div class="devider">
         <p>
           <img id="avatar" src="./res/img/avatar.jpg" alt="my foto">
-          Greetings, dear visitor! My name is Artyom and I am very glad to see you in my virtual guestroom.
-          I am Frontend Developer, UI/UX Designer.
-          I strive to make every page intuitive and beautiful to give great aesthetic pleasure from interaction with it.
-          I know my strengths and I am result-oriented. I do not leave my job undone. If you are seeking for a web-presence or
-          looking for a staff web-developer, my contact information <a href="#contactMe">here</a>. More about me in my <a href="summary.html">summary</a>.
+          <span class="en_language">
+            Greetings, dear visitor! My name is Artyom and I am very glad to see you in my virtual guestroom.
+            I am Frontend Developer, UI/UX Designer.
+            I strive to make every page intuitive and beautiful to give great aesthetic pleasure from interaction with it.
+            I know my strengths and I am result-oriented. I do not leave my job undone. If you are seeking for a web-presence or
+            looking for a staff web-developer, my contact information <a href="#contactMe">here</a>. More about me in my <a href="summary.html">summary</a>.
+          </span>
+          <span class="ru_language">
+            Приветствую Вас, дорогой посетитель! Меня зовут Артём и я очень рада видеть Вас в своей виртуальной гостевой комнате.
+            Я WEB-разработчик и UI/UX дизайнер. Я стремлюсь сделать каждую страницу интуитивно понятной и красивой, чтобы доставить
+            огромное эстетическое удовольствие от взаимодействия с ней. Я знаю свои сильные стороны и ориентирована на результат.
+            Я не оставляю свою работу невыполненной. Если Вам нужно разработать сайт или вы ищите WEB-разработчик себе в штат,
+            моя контактная информация <a href="#contactMe">тут</a>. Более подробная информация в моём <a href="summary.html">резюме</a>.
+          </span>
         </p>
       </div>
     </section>
@@ -102,7 +147,11 @@
     <!-- Service (What I can) -->
     <section id="services">
       <div class="devider">
-        <h2>SERVICES</h2>
+        <h2>
+          <span class="en_language">SERVICES</span>
+          <span class="ru_language">УСЛУГИ</span>
+
+        </h2>
         <div class="scope">
 
           <!-- 1 -->
@@ -113,13 +162,26 @@
               <i class="fas fa-desktop"></i>
             </div>
             <div class="skill-header">
-              <h3>Responsive WEB pages</h3>
+              <h3>
+                <span class="en_language">Responsive WEB pages</span>
+                <span class="ru_language">Адаптивные WEB-страницы</span>
+
+              </h3>
             </div>
             <div class="skill-description">
               <p>
-                Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones).
-                Responsive Web Design is about using HTML and CSS to resize, hide, shrink, enlarge, or move the
-                content to make it look good on any screen.
+                <span class="en_language">
+                  Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones).
+                  Responsive Web Design is about using HTML and CSS to resize, hide, shrink, enlarge, or move the
+                  content to make it look good on any screen.
+                </span>
+
+                <span class="ru_language">
+                  Адаптивный Веб-дизайн позволяет веб-странице хорошо выглядеть на всех устройствах (настольных компьютерах, планшетах и телефонах).
+                  Адаптивный Веб-дизайн - это использование HTML и CSS для изменения размера, скрытия, сжатия, увеличения или перемещения Контента,
+                  чтобы он хорошо выглядел на любом экране.
+                </span>
+
               </p>
             </div>
           </div>
@@ -130,12 +192,25 @@
               <i class="fas fa-users"></i>
             </div>
             <div class="skill-header">
-              <h3>UX/UI Design</h3>
+              <h3>
+                <span class="en_language">UX/UI Design</span>
+                <span class="ru_language">UX/UI Дизайн</span>
+
+              </h3>
             </div>
             <div class="skill-description">
               <p>
-                UX makes interfaces useful. <br>
-                UI makes interfaces beautiful.
+                <span class="en_language">
+                  UX makes interfaces useful. <br>
+                  UI makes interfaces beautiful.
+                </span>
+
+                <span class="ru_language">
+                  UX интерфейс полезным.<br>
+                  UI делает интерфейс красивым.
+                </span>
+
+
               </p>
             </div>
           </div>
@@ -150,10 +225,21 @@
             </div>
             <div class="skill-description">
               <p>
-                I can сreate a simantic HTML code; Pure and easy-read HTML and CSS code; Copy the design and structure
-                of any website; Create an animation of the interface buttons, without Java, using CSS 5;
-                add any jQuery plugin; Install the plugin for visually impaired people on any platform or CMS;
-                add a feedback form and a survey form and much more.
+                <span class="en_language">
+                  I can сreate a simantic HTML code; Pure and easy-read HTML and CSS code; Copy the design and structure
+                  of any website; Create an animation of the interface buttons, without Java, using CSS 5;
+                  add any jQuery plugin; Install the plugin for visually impaired people on any platform or CMS;
+                  add a feedback form and a survey form and much more.
+                </span>
+
+                <span class="ru_language">
+                  Я могу создать симантический HTML код; чистый и легко-читаемый HTML и CSS код;
+                  скопировать дизайн и структуру с любого сайта; Создать анимацию интерфейса, без использования
+                  JavaScript, используя только CSS5; установить и найтроить любой JQuery плагин на любую платформу;
+                  установить плагин для слабовидящих людей на любую платформу или CMS; добавить форму обратной
+                  связи и форму опроса и многое другое.
+                </span>
+
               </p>
             </div>
           </div>
@@ -164,39 +250,72 @@
     <!-- Project -->
     <section id="project">
       <div class="devider">
-        <h2>PROJECT</h2>
+        <h2>
+          <span class="en_language">PROJECTS</span>
+          <span class="ru_language">ПРОЕКТЫ</span>
+        </h2>
         <div class="projectBox">
           <div class="tripleContainer">
             <!-- 1 -->
             <div id="projectOne">
-              <a href="https://iipoison.github.io/ware-house/"><h3>View more</h3></a>
+              <a href="https://iipoison.github.io/ware-house/">
+                <h3>
+                  <span class="en_language">View more</span>
+                  <span class="ru_language">Подробнее</span>
+                </h3>
+              </a>
             </div>
 
             <!-- 2 -->
             <div id="projectTwo">
-              <a href="https://iipoison.github.io/fresh-deals/"><h3>View more</h3></a>
+              <a href="https://iipoison.github.io/fresh-deals/">
+                <h3>
+                  <span class="en_language">View more</span>
+                  <span class="ru_language">Подробнее</span>
+                </h3>
+              </a>
             </div>
 
             <!-- 3 -->
             <div id="projectTree">
-              <a href="https://iipoison.github.io/Colmar-Academy/"><h3>View more</h3></a>
+              <a href="https://iipoison.github.io/Colmar-Academy/">
+                <h3>
+                  <span class="en_language">View more</span>
+                  <span class="ru_language">Подробнее</span>
+                </h3>
+              </a>
             </div>
           </div> <!-- end .tripleContainer -->
 
           <div class="tripleContainer">
             <!-- 4 -->
             <div id="projectFour">
-              <a href="https://iipoison.github.io/Tortoiseshell-Optics/"><h3>View more</h3></a>
+              <a href="https://iipoison.github.io/Tortoiseshell-Optics/">
+                <h3>
+                  <span class="en_language">View more</span>
+                  <span class="ru_language">Подробнее</span>
+                </h3>
+              </a>
             </div>
 
             <!-- 5 -->
             <div id="projectFive">
-              <a href="https://iipoison.github.io/mytimes/"><h3>View more</h3></a>
+              <a href="https://iipoison.github.io/mytimes/">
+                <h3>
+                  <span class="en_language">View more</span>
+                  <span class="ru_language">Подробнее</span>
+                </h3>
+              </a>
             </div>
 
             <!-- 6 -->
             <div id="projectSix">
-              <a href="https://iipoison.github.io/typography-for-ui-cumulative-starting-point/"><h3>View more</h3></a>
+              <a href="https://iipoison.github.io/typography-for-ui-cumulative-starting-point/">
+                <h3>
+                  <span class="en_language">View more</span>
+                  <span class="ru_language">Подробнее</span>
+                </h3>
+              </a>
             </div>
           </div> <!-- end .tripleContainer -->
 
@@ -221,6 +340,10 @@
         </ul>
       </div>
     </footer>
+
+    <!-- Скрипты -->
+    <script src="./res/js/jquery-3.3.1.min.js"></script>
+    <script src="./res/js/langToggle.js"></script>
 
   </body>
 </html>
