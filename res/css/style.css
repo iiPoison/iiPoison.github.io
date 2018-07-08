@@ -23,6 +23,9 @@ html {
       box-shadow: 0 1px 4px 1px #767679;
       background-color: white;
       /* end devider */ }
+      @media only screen and (max-width: 500px) {
+        html body #header {
+          height: 7rem; } }
       html body #header .devider {
         width: 75rem;
         display: flex;
@@ -37,6 +40,9 @@ html {
           flex-direction: row;
           justify-content: space-between;
           align-items: center; }
+          @media only screen and (max-width: 500px) {
+            html body #header .devider .accessoryNav {
+              height: 3rem; } }
           html body #header .devider .accessoryNav .fastContact {
             margin-left: 1rem; }
             html body #header .devider .accessoryNav .fastContact li {
@@ -47,6 +53,16 @@ html {
               html body #header .devider .accessoryNav .fastContact li::after {
                 content: "|";
                 margin-left: 1rem; }
+              @media only screen and (max-width: 500px) {
+                html body #header .devider .accessoryNav .fastContact li {
+                  display: block; }
+                  html body #header .devider .accessoryNav .fastContact li:first-child {
+                    font-size: 1.1rem; }
+                  html body #header .devider .accessoryNav .fastContact li:nth-child(2) {
+                    font-size: 0.89rem; }
+                  html body #header .devider .accessoryNav .fastContact li::after {
+                    content: "";
+                    margin-left: 0; } }
           html body #header .devider .accessoryNav #toggleLanguage {
             font-family: 'Share', cursive;
             display: flex;

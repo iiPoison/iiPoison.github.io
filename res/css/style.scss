@@ -18,6 +18,9 @@ html {
       justify-content: center;
       box-shadow: 0 1px 4px 1px #767679;
       background-color: white;
+      @media only screen and (max-width: 500px) {
+        height: 7rem;
+      }
       .devider {
         width: 75rem;
         display: flex;
@@ -32,6 +35,9 @@ html {
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+          @media only screen and (max-width: 500px) {
+            height: 3rem;
+          }
           .fastContact {
             margin-left: 1rem;
             li {
@@ -42,6 +48,19 @@ html {
               &::after {
                 content: "|";
                 margin-left: 1rem;
+              }
+              @media only screen and (max-width: 500px) {
+                display: block;
+                &:first-child {
+                  font-size: 1.1rem;
+                }
+                &:nth-child(2) {
+                  font-size: 0.89rem;
+                }
+                &::after {
+                  content: "";
+                  margin-left: 0;
+                }
               }
             }
           }
